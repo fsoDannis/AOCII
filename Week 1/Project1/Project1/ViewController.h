@@ -17,5 +17,7 @@
 @interface ViewController : UIViewController
 {
     UILabel *projectInfo;
+    UILabel *topLine;
+    UILabel *bottomLine;
 }
 @end

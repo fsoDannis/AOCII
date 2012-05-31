@@ -22,17 +22,25 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    // LABEL FOR MY INFORMATION
-    projectInfo = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 40.0f, 300.0f, 50.0f)];
+// LABEL FOR MY PROJECT INFO
+    topLine = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 39.0f, 320.0f, 1.0f)];
+    topLine.backgroundColor = [UIColor  whiteColor];
+    [self.view addSubview:topLine];
+    projectInfo = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 40.0f, 320.0f, 50.0f)];
     projectInfo.backgroundColor = [UIColor  blackColor];
     [self.view addSubview:projectInfo];
-    projectInfo.text = @"Dan Annis - 6/1/2012 - Project 1";
+    projectInfo.text = @"Dan Annis - AOC II: Project 1";
     projectInfo.textAlignment=UITextAlignmentCenter;
     projectInfo.backgroundColor=[UIColor myIndigo];
-    projectInfo.textColor= [UIColor blackColor];
+    projectInfo.textColor= [UIColor whiteColor ];
+    bottomLine = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 90.0f, 320.0f, 1.0f)];
+    bottomLine.backgroundColor = [UIColor  whiteColor];
+    [self.view addSubview:bottomLine];
+    
+    
+    
+    // Do any additional setup after loading the view, typically from a nib.
+    [super viewDidLoad];
 }
 
 - (void)viewDidUnload
