@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ShapeClass.h"
 
-@interface RectangleClass : NSObject
+@interface RectangleClass : ShapeClass
 
 @end

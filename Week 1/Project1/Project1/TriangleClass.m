@@ -7,6 +7,7 @@
 //
 
 #import "TriangleClass.h"
+#import "ShapeClass.h"
 
 @implementation TriangleClass
 

@@ -7,6 +7,7 @@
 //
 
 #import "RectangleClass.h"
+#import "ShapeClass.h"
 
 @implementation RectangleClass
 

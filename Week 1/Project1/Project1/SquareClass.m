@@ -7,6 +7,7 @@
 //
 
 #import "SquareClass.h"
+#import "ShapeClass.h"
 
 @implementation SquareClass
 

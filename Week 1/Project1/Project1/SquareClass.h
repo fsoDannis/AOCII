@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ShapeClass.h"
 
 @interface SquareClass : NSObject
 
