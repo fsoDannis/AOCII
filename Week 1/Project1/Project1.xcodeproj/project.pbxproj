@@ -20,6 +20,7 @@
 		15B6FEF015770E0600AB538E /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FEEF15770E0600AB538E /* ShapeFactory.m */; };
 		15B6FEF315770E1500AB538E /* SquareClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FEF215770E1500AB538E /* SquareClass.m */; };
 		15B6FEF615770E2100AB538E /* TriangleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FEF515770E2100AB538E /* TriangleClass.m */; };
+		15B6FF0215771DB500AB538E /* UICustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FF0115771DB500AB538E /* UICustomColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		15B6FEF215770E1500AB538E /* SquareClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareClass.m; sourceTree = "<group>"; };
 		15B6FEF415770E2100AB538E /* TriangleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleClass.h; sourceTree = "<group>"; };
 		15B6FEF515770E2100AB538E /* TriangleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleClass.m; sourceTree = "<group>"; };
+		15B6FF0015771DB500AB538E /* UICustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomColors.h; sourceTree = "<group>"; };
+		15B6FF0115771DB500AB538E /* UICustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomColors.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 			children = (
 				15B6FEDA15770D7C00AB538E /* AppDelegate.h */,
 				15B6FEDB15770D7C00AB538E /* AppDelegate.m */,
+				15B6FF0015771DB500AB538E /* UICustomColors.h */,
+				15B6FF0115771DB500AB538E /* UICustomColors.m */,
 				15B6FEE815770DD800AB538E /* RectangleClass.h */,
 				15B6FEE915770DD800AB538E /* RectangleClass.m */,
 				15B6FEEB15770DF500AB538E /* ShapeClass.h */,
@@ -193,6 +198,7 @@
 				15B6FEF015770E0600AB538E /* ShapeFactory.m in Sources */,
 				15B6FEF315770E1500AB538E /* SquareClass.m in Sources */,
 				15B6FEF615770E2100AB538E /* TriangleClass.m in Sources */,
+				15B6FF0215771DB500AB538E /* UICustomColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +310,7 @@
 				15B6FEE715770D7C00AB538E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

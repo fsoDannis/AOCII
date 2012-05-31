@@ -15,5 +15,7 @@
 
 
 @interface ViewController : UIViewController
-
+{
+    UILabel *projectInfo;
+}
 @end
