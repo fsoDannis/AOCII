@@ -14,5 +14,5 @@
 + (UIColor *)mylightIndigo;
 + (UIColor *)myViolet;
 + (UIColor *)mylightViolet;
-
++ (UIColor *)myGray;
 @end

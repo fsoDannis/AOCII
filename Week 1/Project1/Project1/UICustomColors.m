@@ -54,7 +54,11 @@
 }
 + (UIColor *)mylightViolet
 {
-    return [UIColor colorWithRed:243.0/255.0 green:192.0/255.0 blue:252.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:243.0/255.0 green:192.0/255.0 blue:252.0/255.0 alpha:100.0];
+}
++ (UIColor *)myGray
+{
+    return [UIColor colorWithRed:80.0/255.0 green:81.0/255.0 blue:82.0/255.0 alpha:1.0];
 }
 
 

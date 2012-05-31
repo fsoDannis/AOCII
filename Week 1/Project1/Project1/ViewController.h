@@ -19,5 +19,6 @@
     UILabel *projectInfo;
     UILabel *topLine;
     UILabel *bottomLine;
+
 }
 @end
