@@ -69,6 +69,7 @@
     triangle.shadowOffset = CGSizeMake(0, 1.0);
     [self.view addSubview:triangle];
     
+
     
     // Do any additional setup after loading the view, typically from a nib.
     [super viewDidLoad];

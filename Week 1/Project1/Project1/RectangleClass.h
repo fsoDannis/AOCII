@@ -10,9 +10,5 @@
 #import "ShapeClass.h"
 
 @interface RectangleClass : ShapeClass
-{
-@private
-    int numSides;
-    NSString *nameString;
-}
+
 @end

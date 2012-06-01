@@ -10,13 +10,5 @@
 #import "ShapeClass.h"
 
 @implementation RectangleClass
--(id)init
-{
-    if (self = [super init])
-    {
-        numSides=4;
-        nameString = @"Rectangle";
-    }
-    return self;
-}
+
 @end
