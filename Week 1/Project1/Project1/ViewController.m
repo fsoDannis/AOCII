@@ -41,6 +41,33 @@
      [self.view addSubview:bottomLine];
 // END LABEL FOR MY PROJECT INFO  
     
+    rectangle = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 210.0f, 320.0f, 30.0f)];
+    rectangle.text = @"Shape Rectangle Area: ";
+    rectangle.textAlignment=UITextAlignmentCenter;
+    rectangle.backgroundColor=[UIColor myGray];
+    rectangle.textColor= [UIColor whiteColor ];
+    rectangle.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.75];
+    rectangle.shadowOffset = CGSizeMake(0, 1.0);
+    [self.view addSubview:rectangle];
+    
+    square = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 250, 320.0f, 30.0f)];
+    square.text = @"Shape Square Area: ";
+    square.textAlignment=UITextAlignmentCenter;
+    square.backgroundColor=[UIColor myGray];
+    square.textColor= [UIColor whiteColor ];
+    square.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.75];
+    square.shadowOffset = CGSizeMake(0, 1.0);
+    [self.view addSubview:square];
+   
+    triangle = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 290.0f, 320.0f, 30.0f)];
+    triangle.text = @"Shape Triangle Area: ";
+    triangle.textAlignment=UITextAlignmentCenter;
+    triangle.backgroundColor=[UIColor myGray];
+    triangle.textColor= [UIColor whiteColor ];
+    triangle.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.75];
+    triangle.shadowOffset = CGSizeMake(0, 1.0);
+    [self.view addSubview:triangle];
+    
     
     // Do any additional setup after loading the view, typically from a nib.
     [super viewDidLoad];

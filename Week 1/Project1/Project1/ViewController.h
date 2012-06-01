@@ -19,6 +19,8 @@
     UILabel *projectInfo;
     UILabel *topLine;
     UILabel *bottomLine;
-
+    UILabel *rectangle;
+    UILabel *triangle;
+    UILabel *square;
 }
 @end
