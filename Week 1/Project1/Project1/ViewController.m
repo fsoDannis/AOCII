@@ -40,9 +40,10 @@
     bottomLine.backgroundColor = [UIColor  whiteColor];
      [self.view addSubview:bottomLine];
 // END LABEL FOR MY PROJECT INFO  
+
     
     rectangle = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 210.0f, 320.0f, 30.0f)];
-    rectangle.text = @"Shape Rectangle Area: ";
+    rectangle.text = @"There is no Area for Rectangle";
     rectangle.textAlignment=UITextAlignmentCenter;
     rectangle.backgroundColor=[UIColor myGray];
     rectangle.textColor= [UIColor whiteColor ];
@@ -51,7 +52,7 @@
     [self.view addSubview:rectangle];
     
     square = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 250, 320.0f, 30.0f)];
-    square.text = @"Shape Square Area: ";
+    square.text = @"There is no Area for Square";
     square.textAlignment=UITextAlignmentCenter;
     square.backgroundColor=[UIColor myGray];
     square.textColor= [UIColor whiteColor ];
@@ -60,7 +61,7 @@
     [self.view addSubview:square];
    
     triangle = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 290.0f, 320.0f, 30.0f)];
-    triangle.text = @"Shape Triangle Area: ";
+    triangle.text = @"There is no Area for Triangle";
     triangle.textAlignment=UITextAlignmentCenter;
     triangle.backgroundColor=[UIColor myGray];
     triangle.textColor= [UIColor whiteColor ];
