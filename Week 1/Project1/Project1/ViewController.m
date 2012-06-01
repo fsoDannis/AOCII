@@ -39,7 +39,7 @@
     bottomLine = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 90.0f, 320.0f, 1.0f)];
     bottomLine.backgroundColor = [UIColor  whiteColor];
      [self.view addSubview:bottomLine];
-    
+// END LABEL FOR MY PROJECT INFO  
     
     
     // Do any additional setup after loading the view, typically from a nib.
