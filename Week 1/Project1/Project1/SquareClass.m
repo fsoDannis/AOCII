@@ -11,9 +11,16 @@
 
 @implementation SquareClass
 
--(void)setAttributes
+-(id)init
 {
-
-    
+    if (self = [super init])
+    {
+        shapetype = 2;
+        shapename = @"Rectangle";
+        base = 20;
+        height= 25;
+        numSides = 4;
+    }
+    return self;
 }
 @end
