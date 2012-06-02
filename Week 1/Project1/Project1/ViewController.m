@@ -81,12 +81,18 @@
     rectangle.text = [NSString stringWithFormat:@"The %@ has an Area of %i.",[theRectangle GetName], [theRectangle GetArea]];
 
     SquareClass *theSquare = (SquareClass*) [ShapeFactory CreateShape:0];
-    //Leaving the next two lines out will give me the default values for the rectangle.
+    //Leaving the next two lines out will give me the default values for the square.
     [theSquare setBase:10];
     [theSquare setHeight:10];
     [theSquare GetNumSides];
     square.text = [NSString stringWithFormat:@"The %@ has an Area of %i.",[theSquare GetName], [theSquare GetArea]];
     
+    TriangleClass *theTriangle = (TriangleClass*) [ShapeFactory CreateShape:1];
+    //Leaving the next two lines out will give me the default values for the triangle.
+    [theTriangle setBase:30];
+    [theTriangle setHeight:30];
+    [theTriangle GetNumSides];
+    triangle.text = [NSString stringWithFormat:@"The %@ has an Area of %i.",[theTriangle GetName], [theTriangle GetArea]];
     
     // Do any additional setup after loading the view, typically from a nib.
     [super viewDidLoad];

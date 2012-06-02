@@ -11,4 +11,16 @@
 
 @implementation TriangleClass
 
+-(id)init
+{
+    if (self = [super init])
+    {
+        shapetype = 1;
+        shapename = @"Triangle";
+        base = 4;
+        height= 6;
+        numSides = 3;
+    }
+    return self;
+}
 @end
