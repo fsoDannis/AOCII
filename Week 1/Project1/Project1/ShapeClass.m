@@ -38,6 +38,14 @@
     height=newHeight;
 }
 
+//This will return the numSides from the factory
+-(int)GetNumSides{return numSides;}
+
+//This will return the name of whichever is called in the factory
+-(NSString*)GetName{return shapename;}
+
+//This will retun the area of the shape called from the factory. exception Triangle which will have to be overwritten. 
+-(int)GetArea{area=(base*height);return area;}
 
 
 @end

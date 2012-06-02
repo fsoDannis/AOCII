@@ -11,5 +11,5 @@
 
 @interface SquareClass : NSObject
 
--(void)setAttributes;
+
 @end

@@ -13,7 +13,7 @@
 
 -(void)setAttributes
 {
-    shapename = @"Square";
+
     
 }
 @end
