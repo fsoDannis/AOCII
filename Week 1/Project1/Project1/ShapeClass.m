@@ -26,5 +26,18 @@
     return self;
 };
 
+//Added Method to keep it out of the seperate classes. Shae helped with this one. 
+-(void)setBase:(int)newBase
+{
+    base = newBase;
+}
+
+//Added Method to keep it out of the seperate classes. Shae helped with this one. 
+-(void)setHeight:(int)newHeight
+{
+    height=newHeight;
+}
+
+
 
 @end
