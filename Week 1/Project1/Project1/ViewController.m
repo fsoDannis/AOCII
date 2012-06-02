@@ -69,8 +69,12 @@
     triangle.shadowOffset = CGSizeMake(0, 1.0);
     [self.view addSubview:triangle];
     
-//Creating a Shape
-
+//Overriding my values inside the rectangle with these new ones. and printing the values. 
+    RectangleClass *theRectangle = (RectangleClass*) [ShapeFactory CreateShape:2];
+    [theRectangle setBase:20];
+    [theRectangle setHeight:20];
+    [theRectangle GetNumSides];
+    rectangle.text = [NSString stringWithFormat:@"The %@ has an Area of %i.",[theRectangle GetName], [theRectangle GetArea]];
 
     
     // Do any additional setup after loading the view, typically from a nib.
