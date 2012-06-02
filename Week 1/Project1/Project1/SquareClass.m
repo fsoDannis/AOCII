@@ -15,10 +15,10 @@
 {
     if (self = [super init])
     {
-        shapetype = 2;
-        shapename = @"Rectangle";
-        base = 20;
-        height= 25;
+        shapetype = 0;
+        shapename = @"Square";
+        base = 2;
+        height= 2;
         numSides = 4;
     }
     return self;
