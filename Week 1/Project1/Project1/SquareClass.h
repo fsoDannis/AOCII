@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ShapeClass.h"
 
-@interface SquareClass : NSObject
+@interface SquareClass : ShapeClass
 
 
 @end

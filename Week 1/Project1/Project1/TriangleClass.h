@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ShapeClass.h"
 
-@interface TriangleClass : NSObject
+@interface TriangleClass : ShapeClass
 
 @end
