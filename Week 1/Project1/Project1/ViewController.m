@@ -41,7 +41,7 @@
      [self.view addSubview:bottomLine];
 // END LABEL FOR MY PROJECT INFO  
 
-    
+// CREATING DEFAULT LABELS    
     rectangle = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 210.0f, 320.0f, 30.0f)];
     rectangle.text = @"There is no Area for Rectangle";
     rectangle.textAlignment=UITextAlignmentCenter;
@@ -68,14 +68,25 @@
     triangle.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.75];
     triangle.shadowOffset = CGSizeMake(0, 1.0);
     [self.view addSubview:triangle];
+
+// END CREATION OF DEFAULT LABELS    
     
-//Overriding my values inside the rectangle with these new ones. and printing the values. 
+    
+//Accessing the class and adding new values inside the rectangle with these new ones. and printing the values to a label. 
     RectangleClass *theRectangle = (RectangleClass*) [ShapeFactory CreateShape:2];
+        //Leaving the next two lines out will give me the default values for the rectangle.
     [theRectangle setBase:20];
     [theRectangle setHeight:20];
     [theRectangle GetNumSides];
     rectangle.text = [NSString stringWithFormat:@"The %@ has an Area of %i.",[theRectangle GetName], [theRectangle GetArea]];
 
+    SquareClass *theSquare = (SquareClass*) [ShapeFactory CreateShape:0];
+    //Leaving the next two lines out will give me the default values for the rectangle.
+    [theSquare setBase:10];
+    [theSquare setHeight:10];
+    [theSquare GetNumSides];
+    square.text = [NSString stringWithFormat:@"The %@ has an Area of %i.",[theSquare GetName], [theSquare GetArea]];
+    
     
     // Do any additional setup after loading the view, typically from a nib.
     [super viewDidLoad];
