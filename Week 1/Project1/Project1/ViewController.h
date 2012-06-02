@@ -22,5 +22,8 @@
     UILabel *rectangle;
     UILabel *triangle;
     UILabel *square;
+    UILabel *Info;
 }
+
+
 @end

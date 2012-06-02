@@ -73,6 +73,7 @@
     
     
 //Accessing the class and adding new values inside the rectangle with these new ones. and printing the values to a label. 
+    
     RectangleClass *theRectangle = (RectangleClass*) [ShapeFactory CreateShape:2];
         //Leaving the next two lines out will give me the default values for the rectangle.
     [theRectangle setBase:20];
@@ -93,7 +94,8 @@
     [theTriangle setHeight:30];
     [theTriangle GetNumSides];
     triangle.text = [NSString stringWithFormat:@"The %@ has an Area of %i.",[theTriangle GetName], [theTriangle GetArea]];
-    
+
+
     // Do any additional setup after loading the view, typically from a nib.
     [super viewDidLoad];
 }
