@@ -11,4 +11,9 @@
 
 @implementation SquareClass
 
+-(void)setAttributes
+{
+    shapename = @"Square";
+    
+}
 @end

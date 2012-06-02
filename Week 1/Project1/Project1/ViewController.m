@@ -69,6 +69,13 @@
     triangle.shadowOffset = CGSizeMake(0, 1.0);
     [self.view addSubview:triangle];
     
+//Creating a Shape
+    ShapeClass *shapeType =[[ShapeClass alloc] init];
+    if(shapeType !=nil)
+    {
+        shapeType->shapename = square;
+        
+    }
 
     
     // Do any additional setup after loading the view, typically from a nib.
