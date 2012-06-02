@@ -11,4 +11,5 @@
 
 @interface TriangleClass : ShapeClass
 
+-(int)GetArea
 @end

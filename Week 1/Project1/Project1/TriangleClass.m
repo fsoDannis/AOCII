@@ -23,4 +23,10 @@
     }
     return self;
 }
+
+//Adding a getArea function inside of the Triangle Class to overwrite (Just for this class) the area since it is different. 
+
+
+//Using the same ID so it passes and overwrites inside Square Class.  
+-(int)GetArea{area= (int)(0.5f*(base*height));return area;}
 @end
