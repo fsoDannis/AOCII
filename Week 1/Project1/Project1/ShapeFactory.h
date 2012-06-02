@@ -11,4 +11,6 @@
 
 @interface ShapeFactory : NSObject
 
+//Only Static function here. 
++(ShapeClass*)CreateShape : (NSInteger)shapeID;
 @end
