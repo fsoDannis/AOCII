@@ -8,8 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum
+{
+    SHAPETYPE_RECTANGLE=0,
+    SHAPETYPE_SQUARE,
+    SHAPETYPE_TRIANGLE,
+    SHAPETYPE_BLANK
+}EShapeType;
+
 @interface ShapeClass : NSObject
 {
+    EShapeType type;
     int numSides;
     NSString *name;
 }
