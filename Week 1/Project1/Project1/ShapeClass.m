@@ -39,7 +39,10 @@
 }
 
 //This will return the numSides from the factory
--(int)GetNumSides{return numSides;}
+-(int)GetNumSides
+{
+    return numSides;
+}
 
 //This will return the name of whichever is called in the factory
 -(NSString*)GetName{return shapename;}
