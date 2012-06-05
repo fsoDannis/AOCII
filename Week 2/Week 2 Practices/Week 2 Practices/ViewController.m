@@ -33,6 +33,18 @@
 
 -(IBAction)result:(id)sender
 {
+
+}
+
+
+-(IBAction)add:(id)sender
+{
+ //If this button is pressed then enable the equal button.
+    doWork.enabled=true;
+}
+
+-(IBAction)onClick:(id)sender
+{
     UIButton *button = (UIButton*)sender;
     if(button!=nil)
     {
@@ -67,18 +79,7 @@
         {
             NSLog(@"You pressed 9");
         }
-    }
-}
-
-
--(IBAction)add:(id)sender
-{
-    
-}
-
--(IBAction)onClick:(id)sender
-{
-    
+    } 
 }
 
 -(IBAction)clear:(id)sender

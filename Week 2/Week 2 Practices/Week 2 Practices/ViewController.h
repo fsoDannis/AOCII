@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
- 
+{
+    IBOutlet UIButton *doWork;
+    IBOutlet UIButton *addition;
+}
+
 -(IBAction)result:(id)sender;
 -(IBAction)add:(id)sender;
 -(IBAction)onClick:(id)sender;
