@@ -31,56 +31,32 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
--(IBAction)result:(id)sender
+-(IBAction)addSubtract:(id)sender
 {
-
-}
-
-
--(IBAction)add:(id)sender
-{
- //If this button is pressed then enable the equal button.
-           doWork.enabled=true;
+ 	if (addSubtract == 0) result = currentNumber;
+	else {
+		switch (addSubtract) {
+			case 1:
+				result = result + currentNumber;
+				break;
+			case 2:
+				result = result - currentNumber;
+				break;
+			case 5:
+				break;
+		}
+	}
+	currentNumber = 0;
+	Output.text = [NSString stringWithFormat:@"%.2f",result];
+	addSubtract = [sender tag];
 }
 
 -(IBAction)onClick:(id)sender
 {
-    UIButton *button = (UIButton*)sender;
-    if(button!=nil)
-    {
-        if(button.tag==0)
-        {
-            NSLog(@"You pressed 0");
-        }else if (button.tag==1)
-        {
-            NSLog(@"You pressed 1");
-        }else if (button.tag==2)
-        {
-            NSLog(@"You pressed 2");
-        }else if (button.tag==3)
-        {
-            NSLog(@"You pressed 3");
-        }else if (button.tag==4)
-        {
-            NSLog(@"You pressed 4");
-        }else if (button.tag==5)
-        {
-            NSLog(@"You pressed 5");
-        }else if (button.tag==6)
-        {
-            NSLog(@"You pressed 6");
-        }else if (button.tag==7)
-        {
-            NSLog(@"You pressed 7");
-        }else if (button.tag==8)
-        {
-            NSLog(@"You pressed 8");
-        }else if (button.tag==9)
-        {
-            NSLog(@"You pressed 9");
-        }
-    } 
+        currentNumber = currentNumber*10 + (float)[sender tag];
+        Output.text = [NSString stringWithFormat:@"%.2f",currentNumber];
 }
+     
 
 -(IBAction)clear:(id)sender
 {

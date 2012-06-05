@@ -10,11 +10,12 @@
 
 @interface ViewController : UIViewController
 {
-    IBOutlet UIButton *doWork;
+    IBOutlet UILabel *Output;
+    float result;
+    float currentNumber;
+    int addSubtract;
 }
-
--(IBAction)result:(id)sender;
--(IBAction)add:(id)sender;
 -(IBAction)onClick:(id)sender;
+-(IBAction)addSubtract:(id)sender;
 -(IBAction)clear:(id)sender;
 @end
