@@ -40,7 +40,7 @@
 -(IBAction)add:(id)sender
 {
  //If this button is pressed then enable the equal button.
-    doWork.enabled=true;
+           doWork.enabled=true;
 }
 
 -(IBAction)onClick:(id)sender

@@ -11,7 +11,6 @@
 @interface ViewController : UIViewController
 {
     IBOutlet UIButton *doWork;
-    IBOutlet UIButton *addition;
 }
 
 -(IBAction)result:(id)sender;
