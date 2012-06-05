@@ -47,19 +47,21 @@
 		}
 	}
 	currentNumber = 0;
-	Output.text = [NSString stringWithFormat:@"%.2f",result];
+	Output.text = [NSString stringWithFormat:@"%.1f",result];
 	addSubtract = [sender tag];
 }
 
 -(IBAction)onClick:(id)sender
 {
         currentNumber = currentNumber*10 + (float)[sender tag];
-        Output.text = [NSString stringWithFormat:@"%.2f",currentNumber];
+        Output.text = [NSString stringWithFormat:@"%.1f",currentNumber];
 }
      
 
 -(IBAction)clear:(id)sender
 {
-    
+    currentNumber = 0;
+	Output.text = @"0.0";
+	addSubtract = 0;
 }
 @end
