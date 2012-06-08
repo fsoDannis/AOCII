@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "infoView.h"
 
 @interface ViewController ()
 
@@ -42,7 +43,7 @@
 			case 2:
 				result = result - currentNumber;
 				break;
-			case 5:
+			case 3:
 				break;
 		}
 	}

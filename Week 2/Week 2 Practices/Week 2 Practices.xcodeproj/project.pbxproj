@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1509907A1581869400DB53FB /* infoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 150990791581869400DB53FB /* infoView.m */; };
 		15B6FF66157D466800AB538E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B6FF65157D466800AB538E /* UIKit.framework */; };
 		15B6FF68157D466800AB538E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B6FF67157D466800AB538E /* Foundation.framework */; };
 		15B6FF6A157D466800AB538E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B6FF69157D466800AB538E /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150990781581869400DB53FB /* infoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoView.h; sourceTree = "<group>"; };
+		150990791581869400DB53FB /* infoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoView.m; sourceTree = "<group>"; };
 		15B6FF61157D466800AB538E /* Week 2 Practices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 2 Practices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B6FF65157D466800AB538E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15B6FF67157D466800AB538E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,8 @@
 			children = (
 				15B6FF74157D466800AB538E /* AppDelegate.h */,
 				15B6FF75157D466800AB538E /* AppDelegate.m */,
+				150990781581869400DB53FB /* infoView.h */,
+				150990791581869400DB53FB /* infoView.m */,
 				15B6FF77157D466900AB538E /* ViewController.h */,
 				15B6FF78157D466900AB538E /* ViewController.m */,
 				15B6FF7A157D466900AB538E /* ViewController.xib */,
@@ -163,6 +168,7 @@
 				15B6FF72157D466800AB538E /* main.m in Sources */,
 				15B6FF76157D466800AB538E /* AppDelegate.m in Sources */,
 				15B6FF79157D466900AB538E /* ViewController.m in Sources */,
+				1509907A1581869400DB53FB /* infoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +280,7 @@
 				15B6FF81157D466900AB538E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
