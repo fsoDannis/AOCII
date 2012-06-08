@@ -84,23 +84,30 @@
     
     if (BGswitch.selectedSegmentIndex == 0) {
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"blue.jpg"]];
+        skin.text = [NSString stringWithFormat:@"Re-Activated Blue Skin"];
+         skin.textColor = [UIColor blueColor];
 
         
     }
     
     if (BGswitch.selectedSegmentIndex == 1) {
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bubbles.jpg"]];
-
+        skin.text = [NSString stringWithFormat:@"Activated Bubbles Skin"];
+        skin.textColor = [UIColor whiteColor];
         
     }
     
     if (BGswitch.selectedSegmentIndex == 2) {
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"orange.jpg"]];
+        skin.text = [NSString stringWithFormat:@"Activated Orange Skin"];
+        skin.textColor = [UIColor orangeColor];
 
         
     }
     if (BGswitch.selectedSegmentIndex == 3) {
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pink.jpg"]];
+        skin.text = [NSString stringWithFormat:@"Activated Pink Skin"];
+        skin.textColor = [UIColor purpleColor];
 
         
     }
