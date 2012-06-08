@@ -19,4 +19,6 @@
 -(IBAction)onClick:(id)sender;
 -(IBAction)addSubtract:(id)sender;
 -(IBAction)clear:(id)sender;
+-(IBAction)open:(id)sender;
+
 @end

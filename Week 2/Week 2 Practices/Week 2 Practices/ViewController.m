@@ -65,4 +65,15 @@
 	Output.text = @"0.0";
 	addSubtract = 0;
 }
+
+-(IBAction)open:(id)sender
+{
+    infoView *info = [[infoView alloc] initWithNibName:@"InfoView" bundle:nil];
+    if (info != nil)
+    {
+        [self presentModalViewController:info animated:TRUE];
+    }
+}
+
+
 @end

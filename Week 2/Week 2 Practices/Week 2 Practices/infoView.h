@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ViewController.h"
 
-@interface infoView : NSObject
 
+@interface infoView : UIViewController
+{
+    
+}
 @end
