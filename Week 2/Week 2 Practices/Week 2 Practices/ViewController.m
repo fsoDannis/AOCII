@@ -38,6 +38,8 @@
 
 -(IBAction)addSubtract:(id)sender
 {
+    if (switcheroo.on != false)
+    {
  	if (addSubtract == 0) result = currentNumber;
 	else {
 		switch (addSubtract) {
@@ -55,6 +57,7 @@
 	Output.text = [NSString stringWithFormat:@"%.1f",result];
 	addSubtract = [sender tag];
 }
+}
 
 -(IBAction)onClick:(id)sender
 {
@@ -68,9 +71,12 @@
 
 -(IBAction)clear:(id)sender
 {
+    if (switcheroo.on != false)
+    {
     currentNumber = 0;
 	Output.text = @"0.0";
 	addSubtract = 0;
+    }
 }
 
 -(IBAction)open:(id)sender
@@ -97,7 +103,7 @@
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bubbles.jpg"]];
         skin.text = [NSString stringWithFormat:@"Activated Bubbles Skin"];
         skin.textColor = [UIColor whiteColor];
-        
+                
     }
     
     if (BGswitch.selectedSegmentIndex == 2) {
@@ -123,7 +129,8 @@
     {
         
         currentNumber = 0;
-        Output.text = @"0";
+        Output.text = @"Calculator is Ready...";
+        Output.textAlignment = UITextAlignmentRight;
         addSubtract = 0;
     }
     else
@@ -132,6 +139,7 @@
         currentNumber = 0;
         Output.text = @"Calculator is Off.. Turn it on!";
         Output.textColor = [UIColor redColor];
+        Output.textAlignment = UITextAlignmentCenter;
         addSubtract = 0;
         
     }

@@ -18,6 +18,7 @@
     IBOutlet UILabel *skin;
     IBOutlet UISwitch *switcheroo;
     IBOutlet UISegmentedControl *BGswitch;
+    IBOutlet UIButton *InfoButton;
 }
 @property (weak, nonatomic) IBOutlet UISegmentedControl *_BGSelector;
 
