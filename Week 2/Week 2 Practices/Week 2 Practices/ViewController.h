@@ -16,6 +16,7 @@
     float currentNumber;
     int addSubtract;
     IBOutlet UILabel *skin;
+    IBOutlet UISwitch *switcheroo;
     IBOutlet UISegmentedControl *BGswitch;
 }
 @property (weak, nonatomic) IBOutlet UISegmentedControl *_BGSelector;
@@ -25,5 +26,6 @@
 -(IBAction)clear:(id)sender;
 -(IBAction)open:(id)sender;
 -(IBAction)skin:(id)sender;
+-(IBAction)on_Off:(id)sender;
 
 @end

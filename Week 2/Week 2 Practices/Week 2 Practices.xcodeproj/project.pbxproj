@@ -13,6 +13,7 @@
 		150990981581955800DB53FB /* bubbles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 150990941581955800DB53FB /* bubbles.jpg */; };
 		150990991581955800DB53FB /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 150990951581955800DB53FB /* orange.jpg */; };
 		1509909A1581955800DB53FB /* pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 150990961581955800DB53FB /* pink.jpg */; };
+		1509909C1581A94A00DB53FB /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1509909B1581A94A00DB53FB /* apple.jpg */; };
 		15B6FF66157D466800AB538E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B6FF65157D466800AB538E /* UIKit.framework */; };
 		15B6FF68157D466800AB538E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B6FF67157D466800AB538E /* Foundation.framework */; };
 		15B6FF6A157D466800AB538E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B6FF69157D466800AB538E /* CoreGraphics.framework */; };
@@ -31,6 +32,7 @@
 		150990941581955800DB53FB /* bubbles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bubbles.jpg; sourceTree = "<group>"; };
 		150990951581955800DB53FB /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpg; sourceTree = "<group>"; };
 		150990961581955800DB53FB /* pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pink.jpg; sourceTree = "<group>"; };
+		1509909B1581A94A00DB53FB /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
 		15B6FF61157D466800AB538E /* Week 2 Practices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 2 Practices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B6FF65157D466800AB538E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15B6FF67157D466800AB538E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +92,7 @@
 		15B6FF6B157D466800AB538E /* Week 2 Practices */ = {
 			isa = PBXGroup;
 			children = (
+				1509909B1581A94A00DB53FB /* apple.jpg */,
 				150990931581955800DB53FB /* blue.jpg */,
 				150990941581955800DB53FB /* bubbles.jpg */,
 				150990951581955800DB53FB /* orange.jpg */,
@@ -175,6 +178,7 @@
 				150990981581955800DB53FB /* bubbles.jpg in Resources */,
 				150990991581955800DB53FB /* orange.jpg in Resources */,
 				1509909A1581955800DB53FB /* pink.jpg in Resources */,
+				1509909C1581A94A00DB53FB /* apple.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

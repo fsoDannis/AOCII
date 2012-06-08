@@ -58,9 +58,12 @@
 
 -(IBAction)onClick:(id)sender
 {
+    if (switcheroo.on != false)
+    {
         currentNumber = currentNumber*10 + (float)[sender tag];
         Output.text = [NSString stringWithFormat:@"%.1f",currentNumber];
-}
+    }
+    }
      
 
 -(IBAction)clear:(id)sender
@@ -113,5 +116,26 @@
     }
     
 } 
+
+-(IBAction)on_Off:(id)sender
+{
+    if (switcheroo.on)
+    {
+        
+        currentNumber = 0;
+        Output.text = @"0";
+        addSubtract = 0;
+    }
+    else
+    {
+        
+        currentNumber = 0;
+        Output.text = @"Calculator is Off.. Turn it on!";
+        Output.textColor = [UIColor redColor];
+        addSubtract = 0;
+        
+    }
+    
+}
 
 @end
