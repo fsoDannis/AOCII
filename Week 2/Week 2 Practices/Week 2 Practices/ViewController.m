@@ -75,9 +75,28 @@
     }
 }
 
--(IBAction)skin:(id)sender
+
+-(IBAction)skin:(id)sender 
+
 {
+UISegmentedControl *Skin = (UISegmentedControl*)sender;
+if (Skin != nil)
+{
+    int selectedIndex = Skin.selectedSegmentIndex;
     
+    if (selectedIndex == 0)
+    {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"blue.jpg"]];;
+    }
+    else if (selectedIndex == 1)
+    {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bubbles.jpg"]];;
+    }
+    else if (selectedIndex == 2)
+    {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"orange.jpg"]];;
+    }
+}
 }
 
 @end

@@ -15,6 +15,7 @@
     float result;
     float currentNumber;
     int addSubtract;
+    IBOutlet UILabel *skin;
 }
 
 typedef enum
