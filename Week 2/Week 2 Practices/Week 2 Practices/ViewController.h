@@ -16,9 +16,19 @@
     float currentNumber;
     int addSubtract;
 }
+
+typedef enum
+{
+    Image1=0,
+    Image2,
+    Image3,
+    Image4
+}bgColor;
+
 -(IBAction)onClick:(id)sender;
 -(IBAction)addSubtract:(id)sender;
 -(IBAction)clear:(id)sender;
 -(IBAction)open:(id)sender;
+-(IBAction)skin:(id)sender;
 
 @end
