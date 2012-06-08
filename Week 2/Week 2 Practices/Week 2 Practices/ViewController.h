@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "infoView.h"
+#import "infoViewController.h"
 
 @interface ViewController : UIViewController
 {

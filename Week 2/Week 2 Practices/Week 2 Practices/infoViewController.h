@@ -1,16 +1,16 @@
 //
-//  infoView.h
+//  infoViewController.h
 //  Week 2 Practices
 //
 //  Created by Annis Dan on 6/7/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-
-@interface infoView : UIViewController
+@interface infoViewController : UIViewController
 {
     
 }
+- (IBAction)onClose:(id)sender;
 @end

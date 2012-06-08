@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "infoView.h"
+#import "infoViewController.h"
 
 @interface ViewController ()
 
@@ -68,7 +68,7 @@
 
 -(IBAction)open:(id)sender
 {
-    infoView *info = [[infoView alloc] initWithNibName:@"InfoView" bundle:nil];
+    infoViewController *info = [[infoViewController alloc] initWithNibName:@"infoViewController" bundle:nil];
     if (info != nil)
     {
         [self presentModalViewController:info animated:TRUE];
