@@ -14,6 +14,7 @@
 @end
 
 @implementation ViewController
+@synthesize _BGSelector;
 
 - (void)viewDidLoad
 {
@@ -23,6 +24,7 @@
 
 - (void)viewDidUnload
 {
+    [self set_BGSelector:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -76,27 +78,23 @@
 }
 
 
--(IBAction)skin:(id)sender 
-
-{
-UISegmentedControl *Skin = (UISegmentedControl*)sender;
-if (Skin != nil)
-{
-    int selectedIndex = Skin.selectedSegmentIndex;
+-(IBAction)skin:(id)sender {
     
-    if (selectedIndex == 0)
-    {
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"blue.jpg"]];;
+    if (BGswitch.selectedSegmentIndex == 0) {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"blue.jpg"]];
+        
     }
-    else if (selectedIndex == 1)
-    {
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bubbles.jpg"]];;
+    
+    if (BGswitch.selectedSegmentIndex == 1) {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"orange.jpg"]];
+        
     }
-    else if (selectedIndex == 2)
-    {
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"orange.jpg"]];;
+    
+    if (BGswitch.selectedSegmentIndex == 2) {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pink.jpg"]];
+        
     }
-}
-}
+    
+} 
 
 @end

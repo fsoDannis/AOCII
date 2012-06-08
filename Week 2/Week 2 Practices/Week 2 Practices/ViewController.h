@@ -16,15 +16,9 @@
     float currentNumber;
     int addSubtract;
     IBOutlet UILabel *skin;
+    IBOutlet UISegmentedControl *BGswitch;
 }
-
-typedef enum
-{
-    Image1=0,
-    Image2,
-    Image3,
-    Image4
-}bgColor;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *_BGSelector;
 
 -(IBAction)onClick:(id)sender;
 -(IBAction)addSubtract:(id)sender;
