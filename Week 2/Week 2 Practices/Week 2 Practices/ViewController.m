@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"blue.jpg"]];
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -82,16 +84,24 @@
     
     if (BGswitch.selectedSegmentIndex == 0) {
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"blue.jpg"]];
+
         
     }
     
     if (BGswitch.selectedSegmentIndex == 1) {
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"orange.jpg"]];
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bubbles.jpg"]];
+
         
     }
     
     if (BGswitch.selectedSegmentIndex == 2) {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"orange.jpg"]];
+
+        
+    }
+    if (BGswitch.selectedSegmentIndex == 3) {
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pink.jpg"]];
+
         
     }
     
