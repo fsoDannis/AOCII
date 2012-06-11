@@ -7,6 +7,7 @@
 //
 
 #import "EventPage.h"
+#import "ViewController.h"
 
 @interface EventPage ()
 
@@ -39,6 +40,19 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction)info:(id)sender
+{
+    EventPage *info = [[EventPage alloc] initWithNibName:@"EventPage" bundle:nil];
+    if (info != nil)
+    {
+        [self presentModalViewController:info animated:TRUE];
+    }
+}
+-(IBAction)addEvent:(id)sender
+{
+    
 }
 
 @end

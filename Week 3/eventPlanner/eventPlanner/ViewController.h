@@ -10,7 +10,8 @@
 
 @interface ViewController : UIViewController
 {
-  
+    IBOutlet UITextField *input;
+    IBOutlet UIButton *closeKeyboard;
 }
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)datePicker:(id)sender;

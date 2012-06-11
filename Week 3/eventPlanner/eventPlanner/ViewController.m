@@ -21,6 +21,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -43,14 +44,18 @@
         NSLog(@"date=%@",[date description]);
     }
 }
-
+//Keyboard Button - Close... 
 -(IBAction)closeKeyboard:(id)sender
 {
-    
+    [input resignFirstResponder];
 }
+
+//Saving the text
 -(IBAction)save:(id)sender
 {
-    
+    NSString *tempString =input.text;
+    NSLog(@"%@",tempString);
+    [self dismissModalViewControllerAnimated:TRUE];
 }
 
 
