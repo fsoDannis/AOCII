@@ -15,9 +15,9 @@
 		150990BD1586582900DB53FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 150990BC1586582900DB53FB /* AppDelegate.m */; };
 		150990C01586582900DB53FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150990BF1586582900DB53FB /* ViewController.m */; };
 		150990C31586582900DB53FB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150990C11586582900DB53FB /* ViewController.xib */; };
-		1558CA3515865FA200BB87B8 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1558CA3415865FA200BB87B8 /* Keyboard.png */; };
 		1558CA3F158661F500BB87B8 /* EventPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558CA3D158661F500BB87B8 /* EventPage.m */; };
 		1558CA40158661F500BB87B8 /* EventPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1558CA3E158661F500BB87B8 /* EventPage.xib */; };
+		1558CA4215867AB000BB87B8 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1558CA4115867AB000BB87B8 /* Keyboard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		150990BE1586582900DB53FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		150990BF1586582900DB53FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		150990C21586582900DB53FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		1558CA3415865FA200BB87B8 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
 		1558CA3C158661F500BB87B8 /* EventPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPage.h; sourceTree = "<group>"; };
 		1558CA3D158661F500BB87B8 /* EventPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventPage.m; sourceTree = "<group>"; };
 		1558CA3E158661F500BB87B8 /* EventPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventPage.xib; sourceTree = "<group>"; };
+		1558CA4115867AB000BB87B8 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				150990BB1586582900DB53FB /* AppDelegate.h */,
+				1558CA4115867AB000BB87B8 /* Keyboard.png */,
 				150990BC1586582900DB53FB /* AppDelegate.m */,
 				150990BE1586582900DB53FB /* ViewController.h */,
 				150990BF1586582900DB53FB /* ViewController.m */,
 				150990C11586582900DB53FB /* ViewController.xib */,
-				1558CA3415865FA200BB87B8 /* Keyboard.png */,
 				1558CA3C158661F500BB87B8 /* EventPage.h */,
 				1558CA3D158661F500BB87B8 /* EventPage.m */,
 				1558CA3E158661F500BB87B8 /* EventPage.xib */,
@@ -161,8 +161,8 @@
 			files = (
 				150990B71586582900DB53FB /* InfoPlist.strings in Resources */,
 				150990C31586582900DB53FB /* ViewController.xib in Resources */,
-				1558CA3515865FA200BB87B8 /* Keyboard.png in Resources */,
 				1558CA40158661F500BB87B8 /* EventPage.xib in Resources */,
+				1558CA4215867AB000BB87B8 /* Keyboard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

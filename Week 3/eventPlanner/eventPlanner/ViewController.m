@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -29,7 +30,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
+} 
 
 //My Date Picker
 -(IBAction)datePicker:(id)sender
@@ -42,5 +43,16 @@
         NSLog(@"date=%@",[date description]);
     }
 }
+
+-(IBAction)closeKeyboard:(id)sender
+{
+    
+}
+-(IBAction)save:(id)sender
+{
+    
+}
+
+
 
 @end
