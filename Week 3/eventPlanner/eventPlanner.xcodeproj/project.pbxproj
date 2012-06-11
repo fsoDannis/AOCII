@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150990AD1586582800DB53FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150990AC1586582800DB53FB /* UIKit.framework */; };
+		150990AF1586582800DB53FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150990AE1586582800DB53FB /* Foundation.framework */; };
+		150990B11586582800DB53FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150990B01586582800DB53FB /* CoreGraphics.framework */; };
+		150990B71586582900DB53FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 150990B51586582900DB53FB /* InfoPlist.strings */; };
+		150990B91586582900DB53FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 150990B81586582900DB53FB /* main.m */; };
+		150990BD1586582900DB53FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 150990BC1586582900DB53FB /* AppDelegate.m */; };
+		150990C01586582900DB53FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150990BF1586582900DB53FB /* ViewController.m */; };
+		150990C31586582900DB53FB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150990C11586582900DB53FB /* ViewController.xib */; };
+		1558CA3515865FA200BB87B8 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1558CA3415865FA200BB87B8 /* Keyboard.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		150990A81586582800DB53FB /* eventPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		150990AC1586582800DB53FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		150990AE1586582800DB53FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		150990B01586582800DB53FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		150990B41586582800DB53FB /* eventPlanner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eventPlanner-Info.plist"; sourceTree = "<group>"; };
+		150990B61586582900DB53FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		150990B81586582900DB53FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		150990BA1586582900DB53FB /* eventPlanner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eventPlanner-Prefix.pch"; sourceTree = "<group>"; };
+		150990BB1586582900DB53FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		150990BC1586582900DB53FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		150990BE1586582900DB53FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		150990BF1586582900DB53FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		150990C21586582900DB53FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		1558CA3415865FA200BB87B8 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150990A51586582800DB53FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150990AD1586582800DB53FB /* UIKit.framework in Frameworks */,
+				150990AF1586582800DB53FB /* Foundation.framework in Frameworks */,
+				150990B11586582800DB53FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1509909D1586582800DB53FB = {
+			isa = PBXGroup;
+			children = (
+				150990B21586582800DB53FB /* eventPlanner */,
+				150990AB1586582800DB53FB /* Frameworks */,
+				150990A91586582800DB53FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		150990A91586582800DB53FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150990A81586582800DB53FB /* eventPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		150990AB1586582800DB53FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				150990AC1586582800DB53FB /* UIKit.framework */,
+				150990AE1586582800DB53FB /* Foundation.framework */,
+				150990B01586582800DB53FB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		150990B21586582800DB53FB /* eventPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				150990BB1586582900DB53FB /* AppDelegate.h */,
+				150990BC1586582900DB53FB /* AppDelegate.m */,
+				150990BE1586582900DB53FB /* ViewController.h */,
+				150990BF1586582900DB53FB /* ViewController.m */,
+				150990C11586582900DB53FB /* ViewController.xib */,
+				1558CA3415865FA200BB87B8 /* Keyboard.png */,
+				150990B31586582800DB53FB /* Supporting Files */,
+			);
+			path = eventPlanner;
+			sourceTree = "<group>";
+		};
+		150990B31586582800DB53FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				150990B41586582800DB53FB /* eventPlanner-Info.plist */,
+				150990B51586582900DB53FB /* InfoPlist.strings */,
+				150990B81586582900DB53FB /* main.m */,
+				150990BA1586582900DB53FB /* eventPlanner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		150990A71586582800DB53FB /* eventPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150990C61586582900DB53FB /* Build configuration list for PBXNativeTarget "eventPlanner" */;
+			buildPhases = (
+				150990A41586582800DB53FB /* Sources */,
+				150990A51586582800DB53FB /* Frameworks */,
+				150990A61586582800DB53FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eventPlanner;
+			productName = eventPlanner;
+			productReference = 150990A81586582800DB53FB /* eventPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1509909F1586582800DB53FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 150990A21586582800DB53FB /* Build configuration list for PBXProject "eventPlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1509909D1586582800DB53FB;
+			productRefGroup = 150990A91586582800DB53FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				150990A71586582800DB53FB /* eventPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		150990A61586582800DB53FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150990B71586582900DB53FB /* InfoPlist.strings in Resources */,
+				150990C31586582900DB53FB /* ViewController.xib in Resources */,
+				1558CA3515865FA200BB87B8 /* Keyboard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150990A41586582800DB53FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150990B91586582900DB53FB /* main.m in Sources */,
+				150990BD1586582900DB53FB /* AppDelegate.m in Sources */,
+				150990C01586582900DB53FB /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		150990B51586582900DB53FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150990B61586582900DB53FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		150990C11586582900DB53FB /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150990C21586582900DB53FB /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		150990C41586582900DB53FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		150990C51586582900DB53FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		150990C71586582900DB53FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eventPlanner/eventPlanner-Prefix.pch";
+				INFOPLIST_FILE = "eventPlanner/eventPlanner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		150990C81586582900DB53FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eventPlanner/eventPlanner-Prefix.pch";
+				INFOPLIST_FILE = "eventPlanner/eventPlanner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		150990A21586582800DB53FB /* Build configuration list for PBXProject "eventPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150990C41586582900DB53FB /* Debug */,
+				150990C51586582900DB53FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150990C61586582900DB53FB /* Build configuration list for PBXNativeTarget "eventPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150990C71586582900DB53FB /* Debug */,
+				150990C81586582900DB53FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1509909F1586582800DB53FB /* Project object */;
+}
