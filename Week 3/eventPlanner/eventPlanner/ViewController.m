@@ -31,4 +31,16 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+//My Date Picker
+-(IBAction)datePicker:(id)sender
+{
+    UIDatePicker *picker = (UIDatePicker*) sender;
+    if(picker !=nil)
+    {
+        NSDate *date = picker.date;
+        
+        NSLog(@"date=%@",[date description]);
+    }
+}
+
 @end
