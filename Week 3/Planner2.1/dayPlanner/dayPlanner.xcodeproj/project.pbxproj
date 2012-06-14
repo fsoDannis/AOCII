@@ -88,11 +88,11 @@
 				15A3164C1589DA3B003FFAF9 /* AppDelegate.m */,
 				15A3164E1589DA3B003FFAF9 /* ViewController.h */,
 				15A3164F1589DA3B003FFAF9 /* ViewController.m */,
+				15A316511589DA3B003FFAF9 /* ViewController.xib */,
 				15A3165E1589DCEE003FFAF9 /* Keyboard.png */,
 				15A316591589DA61003FFAF9 /* eventPage.h */,
 				15A3165A1589DA61003FFAF9 /* eventPage.m */,
 				15A3165B1589DA61003FFAF9 /* eventPage.xib */,
-				15A316511589DA3B003FFAF9 /* ViewController.xib */,
 				15A316431589DA3B003FFAF9 /* Supporting Files */,
 			);
 			path = dayPlanner;

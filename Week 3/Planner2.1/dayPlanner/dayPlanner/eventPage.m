@@ -41,4 +41,29 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+//My Date Picker
+-(IBAction)datePicker:(id)sender
+{
+    UIDatePicker *picker = (UIDatePicker*) sender;
+    if(picker !=nil)
+    {
+        NSDate *date = picker.date;
+        
+        NSLog(@"date=%@",[date description]);
+    }
+}
+//Keyboard Button - Close... 
+-(IBAction)closeKeyboard:(id)sender
+{
+    [input resignFirstResponder];
+}
+
+//Saving the text
+-(IBAction)save:(id)sender
+{
+    NSString *tempString =input.text;
+    NSLog(@"%@",tempString);
+    [self dismissModalViewControllerAnimated:TRUE];
+}
 @end
