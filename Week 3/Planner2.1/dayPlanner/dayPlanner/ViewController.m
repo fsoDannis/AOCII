@@ -38,6 +38,7 @@
     info *infoOpen = [[info alloc] initWithNibName:@"info" bundle:nil];
     if (infoOpen != nil)
     {
+        infoOpen.modalTransitionStyle = UIModalTransitionStylePartialCurl;
         [self presentModalViewController:infoOpen animated:TRUE];
     }
 }
@@ -46,6 +47,7 @@
     eventPage *event = [[eventPage alloc] initWithNibName:@"eventPage" bundle:nil];
     if (event != nil)
     {
+        event.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentModalViewController:event animated:TRUE];
     } 
 }

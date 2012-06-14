@@ -13,6 +13,7 @@
 {
     IBOutlet UITextField *input;
     IBOutlet UIButton *closeKeyboard;
+    NSString *myDate;
 }
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)datePicker:(id)sender;

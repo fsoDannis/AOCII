@@ -10,6 +10,7 @@
 
 @interface eventPage ()
 
+
 @end
 
 @implementation eventPage
@@ -19,6 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
@@ -45,12 +47,16 @@
 //My Date Picker
 -(IBAction)datePicker:(id)sender
 {
+    
     UIDatePicker *picker = (UIDatePicker*) sender;
     if(picker !=nil)
     {
-        NSDate *date = picker.date;
-        
-        NSLog(@"date=%@",[date description]);
+        NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
+    if (formatDate != nil) {
+        [formatDate setDateFormat:@"MMMM dd, @ h:mm a"];
+    }
+        myDate = [formatDate stringFromDate:picker.date];
+        NSLog(@"%@", myDate);
     }
 }
 //Keyboard Button - Close... 
@@ -64,6 +70,10 @@
 {
     NSString *tempString =input.text;
     NSLog(@"%@",tempString);
+    
+    
+    
+    
     [self dismissModalViewControllerAnimated:TRUE];
 }
 @end
