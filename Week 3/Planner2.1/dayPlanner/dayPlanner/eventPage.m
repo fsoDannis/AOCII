@@ -59,13 +59,14 @@
         NSLog(@"%@", myDate);
     }
 }
+
 //Keyboard Button - Close... 
 -(IBAction)closeKeyboard:(id)sender
 {
     [input resignFirstResponder];
 }
 
-//Saving the text
+//Saving (or sending i should say) the text
 -(IBAction)save:(id)sender
 {
     NSString *tempString =input.text;

@@ -32,7 +32,7 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
+//Opening a flip page for the information
 -(IBAction)info:(id)sender
 {
     info *infoOpen = [[info alloc] initWithNibName:@"info" bundle:nil];
@@ -42,6 +42,7 @@
         [self presentModalViewController:infoOpen animated:TRUE];
     }
 }
+//Opening a page with a different transistion
 -(IBAction)addEvent:(id)sender
 {
     eventPage *event = [[eventPage alloc] initWithNibName:@"eventPage" bundle:nil];

@@ -42,6 +42,8 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+//Close the modal window
 -(IBAction)close:(id)sender
 {
 [self dismissModalViewControllerAnimated:TRUE];
