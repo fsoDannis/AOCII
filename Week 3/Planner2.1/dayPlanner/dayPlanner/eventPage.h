@@ -14,6 +14,7 @@
     IBOutlet UITextField *input;
     IBOutlet UIButton *closeKeyboard;
     NSString *myDate;
+    IBOutlet UIDatePicker *datePicker;
 }
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)datePicker:(id)sender;
