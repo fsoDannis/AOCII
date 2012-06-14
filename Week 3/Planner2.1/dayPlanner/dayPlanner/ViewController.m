@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "eventPage.h"
+#import "info.h"
 
 @interface ViewController ()
 
@@ -30,6 +32,24 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
+-(IBAction)info:(id)sender
+{
+    info *infoOpen = [[info alloc] initWithNibName:@"info" bundle:nil];
+    if (infoOpen != nil)
+    {
+        [self presentModalViewController:infoOpen animated:TRUE];
+    }
+}
+-(IBAction)addEvent:(id)sender
+{
+    eventPage *event = [[eventPage alloc] initWithNibName:@"eventPage" bundle:nil];
+    if (event != nil)
+    {
+        [self presentModalViewController:event animated:TRUE];
+    } 
+}
+
 
 
 

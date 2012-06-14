@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  info.h
 //  dayPlanner
 //
 //  Created by Annis Dan on 6/14/12.
@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "eventPage.h"
+#import "ViewController.h"
 
-@interface ViewController : UIViewController
+@interface info : UIViewController
 {
-    IBOutlet UITextView *textView;
     
 }
--(IBAction)info:(id)sender;
--(IBAction)addEvent:(id)sender;
-
+-(IBAction)close:(id)sender;
 @end
