@@ -8,15 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
-@interface eventPage : UIViewController
+
+
+@protocol EventViewDelegate <NSObject>
+@required
+-(void)DidClose:(NSString*)eventString;
+
+
+@end
+
+
+@interface eventPage : UIViewController <UITextFieldDelegate>
 
 {
+    id<EventViewDelegate> delegate;
+    
     IBOutlet UITextField *input;
     IBOutlet UIButton *closeKeyboard;
     NSString *myDate;
     IBOutlet UIDatePicker *datePicker;
 }
+@property (strong) id<EventViewDelegate> delegate;
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)datePicker:(id)sender;
 -(IBAction)save:(id)sender;
+
 @end

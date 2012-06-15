@@ -7,13 +7,16 @@
 //
 
 #import "eventPage.h"
+#import "ViewController.h"
+#import "info.h"
 
-@interface eventPage ()
-
+@interface eventPage ()  
 
 @end
 
 @implementation eventPage
+
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,6 +46,21 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
+//Text functions
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    input.text = [NSString stringWithString:@""];
+    return true;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self dismissModalViewControllerAnimated:TRUE];
+    return true;
 }
 
 
