@@ -71,21 +71,14 @@
         myDate = [formatDate stringFromDate:picker.date];
         NSLog(@"%@", myDate);
     }
+  
 }
-// Do not like the return button because they need to pick a date first....
-//- (BOOL)textFieldShouldReturn:(UITextField *)textField
-//{
-//    
-//    
-//    [self dismissModalViewControllerAnimated:TRUE];
-//    
-//    if((delegate != nil) && (myDate !=nil))
-//    {
-//        eventString = [NSString stringWithFormat:@"There is a \"%@\" \n \t on %@ \n \n", input.text, myDate];
-//        [delegate DidClose:eventString];
-//   
-//    }
-//}
+// Do not like the return button saving the data because they need to pick a date first....
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [input resignFirstResponder];
+    
+}
 
 
 
@@ -93,6 +86,11 @@
 -(IBAction)closeKeyboard:(id)sender
 {
     [input resignFirstResponder];
+    
+// Was wanting to show Date Picker after the text field closes.. Needs a lot of work.. so opted out!
+//    UIDatePicker *pv = [[UIDatePicker alloc] initWithFrame:CGRectMake(0,244,0,0)];
+//    [self.view addSubview:picker];
+
 }
 
 //Saving (or sending i should say) the text -- Only sends data if they are not blank. 
