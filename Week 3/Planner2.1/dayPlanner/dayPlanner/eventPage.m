@@ -56,14 +56,6 @@
     input.text = [NSString stringWithString:@""];
     return true;
 }
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [self dismissModalViewControllerAnimated:TRUE];
-    return true;
-}
-
-
 //My Date Picker
 -(IBAction)datePicker:(id)sender
 {
@@ -73,13 +65,29 @@
     if(picker !=nil)
     {
         NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
-    if (formatDate != nil) {
-        [formatDate setDateFormat:@"MMMM dd, @ h:mm a"];
-    }
+        if (formatDate != nil) {
+            [formatDate setDateFormat:@"MMMM dd, @ h:mm a"];
+        }
         myDate = [formatDate stringFromDate:picker.date];
         NSLog(@"%@", myDate);
     }
 }
+// Do not like the return button because they need to pick a date first....
+//- (BOOL)textFieldShouldReturn:(UITextField *)textField
+//{
+//    
+//    
+//    [self dismissModalViewControllerAnimated:TRUE];
+//    
+//    if((delegate != nil) && (myDate !=nil))
+//    {
+//        eventString = [NSString stringWithFormat:@"There is a \"%@\" \n \t on %@ \n \n", input.text, myDate];
+//        [delegate DidClose:eventString];
+//   
+//    }
+//}
+
+
 
 //Keyboard Button - Close... 
 -(IBAction)closeKeyboard:(id)sender
@@ -87,15 +95,15 @@
     [input resignFirstResponder];
 }
 
-//Saving (or sending i should say) the text
+//Saving (or sending i should say) the text -- Only sends data if they are not blank. 
 -(IBAction)save:(id)sender
 {
-    NSString *tempString =input.text;
-    NSLog(@"%@",tempString);
-    
-    
-    
-    
+    if((delegate != nil) && (myDate !=nil))
+    {
+        eventString = [NSString stringWithFormat:@"There is a \"%@\" \n \t on %@ \n \n", input.text, myDate];
+        [delegate DidClose:eventString];
+        
+    }
     [self dismissModalViewControllerAnimated:TRUE];
 }
 @end

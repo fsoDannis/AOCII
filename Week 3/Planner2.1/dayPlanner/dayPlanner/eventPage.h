@@ -25,8 +25,10 @@
     
     IBOutlet UITextField *input;
     IBOutlet UIButton *closeKeyboard;
-    NSString *myDate;
     IBOutlet UIDatePicker *datePicker;
+    NSString *myDate;
+    NSString *eventString;
+
 }
 @property (strong) id<EventViewDelegate> delegate;
 -(IBAction)closeKeyboard:(id)sender;

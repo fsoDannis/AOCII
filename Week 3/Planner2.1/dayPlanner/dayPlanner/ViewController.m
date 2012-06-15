@@ -50,11 +50,16 @@
     eventPage *event = [[eventPage alloc] initWithNibName:@"eventPage" bundle:nil];
     if (event != nil)
     {
+        event.delegate = self; 
         event.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentModalViewController:event animated:TRUE];
     } 
 }
-
+// My did close... Still trying to figure this out here.. 
+-(void)DidClose:(NSString*)eventString
+{
+    textView.text = [textView.text stringByAppendingString:eventString];
+}
 
 
 
