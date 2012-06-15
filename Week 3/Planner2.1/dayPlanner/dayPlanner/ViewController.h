@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "eventPage.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <EventViewDelegate>
 {
     IBOutlet UITextView *textView;
     
