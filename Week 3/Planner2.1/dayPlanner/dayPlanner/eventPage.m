@@ -1,10 +1,6 @@
-//
-//  eventPage.m
-//  dayPlanner
-//
+//  Event Planner - AOC II - Project 3
 //  Created by Annis Dan on 6/14/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+
 
 #import "eventPage.h"
 #import "ViewController.h"
@@ -30,8 +26,6 @@
 
 - (void)viewDidLoad
 {
-    
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -56,10 +50,10 @@
     input.text = [NSString stringWithString:@""];
     return true;
 }
+
 //My Date Picker
 -(IBAction)datePicker:(id)sender
 {
-    
     UIDatePicker *picker = (UIDatePicker*) sender;
     [picker setMinimumDate:[NSDate date]];
     if(picker !=nil)
@@ -71,26 +65,18 @@
         myDate = [formatDate stringFromDate:picker.date];
         NSLog(@"%@", myDate);
     }
-  
 }
+
 // Do not like the return button saving the data because they need to pick a date first....
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [input resignFirstResponder];
-    
 }
-
-
 
 //Keyboard Button - Close... 
 -(IBAction)closeKeyboard:(id)sender
 {
     [input resignFirstResponder];
-    
-// Was wanting to show Date Picker after the text field closes.. Needs a lot of work.. so opted out!
-//    UIDatePicker *pv = [[UIDatePicker alloc] initWithFrame:CGRectMake(0,244,0,0)];
-//    [self.view addSubview:picker];
-
 }
 
 //Saving (or sending i should say) the text -- Only sends data if they are not blank. 

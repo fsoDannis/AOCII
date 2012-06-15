@@ -1,10 +1,5 @@
-//
-//  eventPage.h
-//  dayPlanner
-//
+//  Event Planner - AOC II - Project 3
 //  Created by Annis Dan on 6/14/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
@@ -13,8 +8,6 @@
 @protocol EventViewDelegate <NSObject>
 @required
 -(void)DidClose:(NSString*)eventString;
-
-
 @end
 
 
@@ -30,7 +23,9 @@
     NSString *eventString;
 
 }
+
 @property (strong) id<EventViewDelegate> delegate;
+
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)datePicker:(id)sender;
 -(IBAction)save:(id)sender;

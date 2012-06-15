@@ -1,10 +1,5 @@
-//
-//  info.m
-//  dayPlanner
-//
+//  Event Planner - AOC II - Project 3
 //  Created by Annis Dan on 6/14/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #import "info.h"
 #import "eventPage.h"

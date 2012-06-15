@@ -1,25 +1,16 @@
-//
-//  ViewController.m
-//  dayPlanner
-//
+//  Event Planner - AOC II - Project 3
 //  Created by Annis Dan on 6/14/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #import "ViewController.h"
 #import "eventPage.h"
 #import "info.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad
 {
-
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -34,6 +25,8 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
+
 //Opening a flip page for the information
 -(IBAction)info:(id)sender
 {
@@ -44,6 +37,8 @@
         [self presentModalViewController:infoOpen animated:TRUE];
     }
 }
+
+
 //Opening a page with a different transistion
 -(IBAction)addEvent:(id)sender
 {
@@ -55,12 +50,12 @@
         [self presentModalViewController:event animated:TRUE];
     } 
 }
+
+
 // My did close... Still trying to figure this out here.. 
 -(void)DidClose:(NSString*)eventString
 {
     textView.text = [textView.text stringByAppendingString:eventString];
 }
-
-
 
 @end
