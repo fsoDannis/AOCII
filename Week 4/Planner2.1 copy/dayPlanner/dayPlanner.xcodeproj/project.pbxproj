@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		158E545D1592ABCC00C3BD05 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 158E545A1592ABCC00C3BD05 /* button.png */; };
+		158E545E1592ABCC00C3BD05 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 158E545B1592ABCC00C3BD05 /* swipe.png */; };
+		158E545F1592ABCC00C3BD05 /* swipeD.png in Resources */ = {isa = PBXBuildFile; fileRef = 158E545C1592ABCC00C3BD05 /* swipeD.png */; };
+		15A3163D1589DA3B003FFAF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A3163C1589DA3B003FFAF9 /* UIKit.framework */; };
+		15A3163F1589DA3B003FFAF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A3163E1589DA3B003FFAF9 /* Foundation.framework */; };
+		15A316411589DA3B003FFAF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A316401589DA3B003FFAF9 /* CoreGraphics.framework */; };
+		15A316471589DA3B003FFAF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A316451589DA3B003FFAF9 /* InfoPlist.strings */; };
+		15A316491589DA3B003FFAF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A316481589DA3B003FFAF9 /* main.m */; };
+		15A3164D1589DA3B003FFAF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A3164C1589DA3B003FFAF9 /* AppDelegate.m */; };
+		15A316501589DA3B003FFAF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A3164F1589DA3B003FFAF9 /* ViewController.m */; };
+		15A316531589DA3B003FFAF9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A316511589DA3B003FFAF9 /* ViewController.xib */; };
+		15A3165C1589DA61003FFAF9 /* eventPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A3165A1589DA61003FFAF9 /* eventPage.m */; };
+		15A3165D1589DA61003FFAF9 /* eventPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A3165B1589DA61003FFAF9 /* eventPage.xib */; };
+		15A3165F1589DCEE003FFAF9 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A3165E1589DCEE003FFAF9 /* Keyboard.png */; };
+		15A316631589DF58003FFAF9 /* info.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A316611589DF58003FFAF9 /* info.m */; };
+		15A316641589DF58003FFAF9 /* info.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A316621589DF58003FFAF9 /* info.xib */; };
+		15A316661589E15A003FFAF9 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A316651589E15A003FFAF9 /* apple.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		158E545A1592ABCC00C3BD05 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		158E545B1592ABCC00C3BD05 /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
+		158E545C1592ABCC00C3BD05 /* swipeD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipeD.png; sourceTree = "<group>"; };
+		15A316381589DA3B003FFAF9 /* dayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A3163C1589DA3B003FFAF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15A3163E1589DA3B003FFAF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15A316401589DA3B003FFAF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15A316441589DA3B003FFAF9 /* dayPlanner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dayPlanner-Info.plist"; sourceTree = "<group>"; };
+		15A316461589DA3B003FFAF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15A316481589DA3B003FFAF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15A3164A1589DA3B003FFAF9 /* dayPlanner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dayPlanner-Prefix.pch"; sourceTree = "<group>"; };
+		15A3164B1589DA3B003FFAF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15A3164C1589DA3B003FFAF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15A3164E1589DA3B003FFAF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		15A3164F1589DA3B003FFAF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		15A316521589DA3B003FFAF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		15A316591589DA61003FFAF9 /* eventPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventPage.h; sourceTree = "<group>"; };
+		15A3165A1589DA61003FFAF9 /* eventPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventPage.m; sourceTree = "<group>"; };
+		15A3165B1589DA61003FFAF9 /* eventPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = eventPage.xib; sourceTree = "<group>"; };
+		15A3165E1589DCEE003FFAF9 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
+		15A316601589DF58003FFAF9 /* info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info.h; sourceTree = "<group>"; };
+		15A316611589DF58003FFAF9 /* info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = info.m; sourceTree = "<group>"; };
+		15A316621589DF58003FFAF9 /* info.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = info.xib; sourceTree = "<group>"; };
+		15A316651589E15A003FFAF9 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15A316351589DA3B003FFAF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A3163D1589DA3B003FFAF9 /* UIKit.framework in Frameworks */,
+				15A3163F1589DA3B003FFAF9 /* Foundation.framework in Frameworks */,
+				15A316411589DA3B003FFAF9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15A3162D1589DA3B003FFAF9 = {
+			isa = PBXGroup;
+			children = (
+				15A316421589DA3B003FFAF9 /* dayPlanner */,
+				15A3163B1589DA3B003FFAF9 /* Frameworks */,
+				15A316391589DA3B003FFAF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15A316391589DA3B003FFAF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15A316381589DA3B003FFAF9 /* dayPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15A3163B1589DA3B003FFAF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15A3163C1589DA3B003FFAF9 /* UIKit.framework */,
+				15A3163E1589DA3B003FFAF9 /* Foundation.framework */,
+				15A316401589DA3B003FFAF9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15A316421589DA3B003FFAF9 /* dayPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				15A3164B1589DA3B003FFAF9 /* AppDelegate.h */,
+				15A3164C1589DA3B003FFAF9 /* AppDelegate.m */,
+				15A3164E1589DA3B003FFAF9 /* ViewController.h */,
+				15A3164F1589DA3B003FFAF9 /* ViewController.m */,
+				15A316511589DA3B003FFAF9 /* ViewController.xib */,
+				15A316601589DF58003FFAF9 /* info.h */,
+				15A316611589DF58003FFAF9 /* info.m */,
+				15A316621589DF58003FFAF9 /* info.xib */,
+				158E545A1592ABCC00C3BD05 /* button.png */,
+				158E545B1592ABCC00C3BD05 /* swipe.png */,
+				158E545C1592ABCC00C3BD05 /* swipeD.png */,
+				15A3165E1589DCEE003FFAF9 /* Keyboard.png */,
+				15A316651589E15A003FFAF9 /* apple.jpg */,
+				15A316591589DA61003FFAF9 /* eventPage.h */,
+				15A3165A1589DA61003FFAF9 /* eventPage.m */,
+				15A3165B1589DA61003FFAF9 /* eventPage.xib */,
+				15A316431589DA3B003FFAF9 /* Supporting Files */,
+			);
+			path = dayPlanner;
+			sourceTree = "<group>";
+		};
+		15A316431589DA3B003FFAF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15A316441589DA3B003FFAF9 /* dayPlanner-Info.plist */,
+				15A316451589DA3B003FFAF9 /* InfoPlist.strings */,
+				15A316481589DA3B003FFAF9 /* main.m */,
+				15A3164A1589DA3B003FFAF9 /* dayPlanner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15A316371589DA3B003FFAF9 /* dayPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15A316561589DA3B003FFAF9 /* Build configuration list for PBXNativeTarget "dayPlanner" */;
+			buildPhases = (
+				15A316341589DA3B003FFAF9 /* Sources */,
+				15A316351589DA3B003FFAF9 /* Frameworks */,
+				15A316361589DA3B003FFAF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dayPlanner;
+			productName = dayPlanner;
+			productReference = 15A316381589DA3B003FFAF9 /* dayPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15A3162F1589DA3B003FFAF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 15A316321589DA3B003FFAF9 /* Build configuration list for PBXProject "dayPlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 15A3162D1589DA3B003FFAF9;
+			productRefGroup = 15A316391589DA3B003FFAF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15A316371589DA3B003FFAF9 /* dayPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15A316361589DA3B003FFAF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A316471589DA3B003FFAF9 /* InfoPlist.strings in Resources */,
+				15A316531589DA3B003FFAF9 /* ViewController.xib in Resources */,
+				15A3165D1589DA61003FFAF9 /* eventPage.xib in Resources */,
+				15A3165F1589DCEE003FFAF9 /* Keyboard.png in Resources */,
+				15A316641589DF58003FFAF9 /* info.xib in Resources */,
+				15A316661589E15A003FFAF9 /* apple.jpg in Resources */,
+				158E545D1592ABCC00C3BD05 /* button.png in Resources */,
+				158E545E1592ABCC00C3BD05 /* swipe.png in Resources */,
+				158E545F1592ABCC00C3BD05 /* swipeD.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15A316341589DA3B003FFAF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A316491589DA3B003FFAF9 /* main.m in Sources */,
+				15A3164D1589DA3B003FFAF9 /* AppDelegate.m in Sources */,
+				15A316501589DA3B003FFAF9 /* ViewController.m in Sources */,
+				15A3165C1589DA61003FFAF9 /* eventPage.m in Sources */,
+				15A316631589DF58003FFAF9 /* info.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15A316451589DA3B003FFAF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A316461589DA3B003FFAF9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		15A316511589DA3B003FFAF9 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A316521589DA3B003FFAF9 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15A316541589DA3B003FFAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15A316551589DA3B003FFAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15A316571589DA3B003FFAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dayPlanner/dayPlanner-Prefix.pch";
+				INFOPLIST_FILE = "dayPlanner/dayPlanner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		15A316581589DA3B003FFAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dayPlanner/dayPlanner-Prefix.pch";
+				INFOPLIST_FILE = "dayPlanner/dayPlanner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15A316321589DA3B003FFAF9 /* Build configuration list for PBXProject "dayPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A316541589DA3B003FFAF9 /* Debug */,
+				15A316551589DA3B003FFAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15A316561589DA3B003FFAF9 /* Build configuration list for PBXNativeTarget "dayPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A316571589DA3B003FFAF9 /* Debug */,
+				15A316581589DA3B003FFAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15A3162F1589DA3B003FFAF9 /* Project object */;
+}
