@@ -80,6 +80,10 @@
 
 -(IBAction)save:(id)sender
 {
+    if ([textView.text isEqualToString:@""]){
+        [self displayAlertWithString:@"You must create an Event if you want to save Anything!" andTitle:@"Error"];
+    }else{
+    
     NSLog(@"save pressed");
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *allEvents = textView.text;
@@ -87,8 +91,18 @@
         [defaults setObject:allEvents forKey:@"myEvents"];
         //actually saving the data
         [defaults synchronize];
-    
+    [self displayAlertWithString:@"Your Data was Saved!" andTitle:@"Alert"];
+    }
 }
+
+//UIAlertView
+-(void)displayAlertWithString:(NSString *)string andTitle:(NSString *)title{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:string delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
+
+
 
 - (void)viewDidLoad
 
@@ -109,8 +123,12 @@
 
 -(IBAction)clear:(id)sender
 {
+    
     [[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle]bundleIdentifier]];
     textView.text = @"";
+    
+      [self displayAlertWithString:@"You're data has been Wiped!" andTitle:@"Alert"];
+    
 }
 
 
