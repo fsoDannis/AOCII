@@ -7,13 +7,14 @@
 @interface ViewController : UIViewController <EventViewDelegate>
 {
     IBOutlet UITextView *textView;
-    IBOutlet UILabel *swipeToAdd;
+    IBOutlet UIImageView *swiper;
+    IBOutlet UILabel *swipeBG;
     CGRect origSwiperPosition;
 
     UISwipeGestureRecognizer *leftSwipe;
     UISwipeGestureRecognizer *rightSwipe;
 }
-@property (weak, nonatomic) IBOutlet UIImageView *swiper;
+//@property (weak, nonatomic) IBOutlet UIImageView *swiper;
 
 
 -(IBAction)info:(id)sender;
