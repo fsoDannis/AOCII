@@ -9,7 +9,6 @@
     IBOutlet UITextView *textView;
     IBOutlet UIImageView *swiper;
     IBOutlet UILabel *swipeBG;
-    IBOutlet UIBarButtonItem  *save;
     UISwipeGestureRecognizer *rightSwipe;
 }
 
@@ -17,5 +16,5 @@
 
 -(IBAction)info:(id)sender;
 -(IBAction)save:(id)sender;
-
+-(IBAction)clear:(id)sender;
 @end

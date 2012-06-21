@@ -13,6 +13,7 @@
 		158E546B1592C9C600C3BD05 /* closebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 158E54691592C9C600C3BD05 /* closebutton.png */; };
 		158E546C1592C9C600C3BD05 /* swipeClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 158E546A1592C9C600C3BD05 /* swipeClose.png */; };
 		158E546E1592CB4000C3BD05 /* swipeCloseD.png in Resources */ = {isa = PBXBuildFile; fileRef = 158E546D1592CB4000C3BD05 /* swipeCloseD.png */; };
+		158E547415933B9100C3BD05 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 158E547315933B9100C3BD05 /* clear.png */; };
 		15A3163D1589DA3B003FFAF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A3163C1589DA3B003FFAF9 /* UIKit.framework */; };
 		15A3163F1589DA3B003FFAF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A3163E1589DA3B003FFAF9 /* Foundation.framework */; };
 		15A316411589DA3B003FFAF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A316401589DA3B003FFAF9 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 		158E54691592C9C600C3BD05 /* closebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closebutton.png; sourceTree = "<group>"; };
 		158E546A1592C9C600C3BD05 /* swipeClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipeClose.png; sourceTree = "<group>"; };
 		158E546D1592CB4000C3BD05 /* swipeCloseD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipeCloseD.png; sourceTree = "<group>"; };
+		158E547315933B9100C3BD05 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
 		15A316381589DA3B003FFAF9 /* dayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A3163C1589DA3B003FFAF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15A3163E1589DA3B003FFAF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +111,7 @@
 				15A3164F1589DA3B003FFAF9 /* ViewController.m */,
 				15A316511589DA3B003FFAF9 /* ViewController.xib */,
 				15A316601589DF58003FFAF9 /* info.h */,
+				158E547315933B9100C3BD05 /* clear.png */,
 				15A316611589DF58003FFAF9 /* info.m */,
 				15A316621589DF58003FFAF9 /* info.xib */,
 				158E545A1592ABCC00C3BD05 /* button.png */,
@@ -200,6 +203,7 @@
 				158E546B1592C9C600C3BD05 /* closebutton.png in Resources */,
 				158E546C1592C9C600C3BD05 /* swipeClose.png in Resources */,
 				158E546E1592CB4000C3BD05 /* swipeCloseD.png in Resources */,
+				158E547415933B9100C3BD05 /* clear.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

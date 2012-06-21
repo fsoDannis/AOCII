@@ -107,6 +107,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(IBAction)clear:(id)sender
+{
+    [[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle]bundleIdentifier]];
+    textView.text = @"";
+}
 
 
 @end
