@@ -26,8 +26,18 @@
 
 - (void)viewDidLoad
 {
+    swipeCloseLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipeClose"]];
+
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swiperClose addGestureRecognizer:leftSwipe];
+    
 }
 
 - (void)viewDidUnload
@@ -54,6 +64,7 @@
 //My Date Picker
 -(IBAction)datePicker:(id)sender
 {
+   
     UIDatePicker *picker = (UIDatePicker*) sender;
     [picker setMinimumDate:[NSDate date]];
     if(picker !=nil)
@@ -79,16 +90,44 @@
     [input resignFirstResponder];
 }
 
-//Saving (or sending i should say) the text -- Only sends data if they are not blank. 
--(IBAction)save:(id)sender
+////Saving (or sending i should say) the text -- Only sends data if they are not blank. 
+//-(IBAction)save:(id)sender
+//{
+//    if((delegate != nil) && (myDate !=nil))
+//    {
+//        eventString = [NSString stringWithFormat:@"There is a \"%@\" \n \t on %@ \n \n", input.text, myDate];
+//        [delegate DidClose:eventString];
+//        
+//    }
+//    [self dismissModalViewControllerAnimated:TRUE];
+//    
+//}
+
+
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
-    if((delegate != nil) && (myDate !=nil))
-    {
-        eventString = [NSString stringWithFormat:@"There is a \"%@\" \n \t on %@ \n \n", input.text, myDate];
-        [delegate DidClose:eventString];
-        
-    }
-    [self dismissModalViewControllerAnimated:TRUE];
+    [UIView beginAnimations:nil context:nil];
     
-}
+    if(recognizer.direction = UISwipeGestureRecognizerDirectionLeft)
+    {
+        
+        swipeCloseLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipeCloseD"]];
+        swiperClose.frame = CGRectMake(16.0f, 4.0f, 46.0f, 36.0f);
+    
+        if((delegate != nil) && (myDate !=nil))
+        {
+            eventString = [NSString stringWithFormat:@"There is a \"%@\" \n \t on %@ \n \n", input.text, myDate];
+            [delegate DidClose:eventString];
+            
+        }
+        [self dismissModalViewControllerAnimated:TRUE];
+        
+        NSLog(@"Swiped Left");
+    }
+    swipeCloseLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipeClose"]];
+    swiperClose.frame = CGRectMake(190.0f,4.f, 46.0f, 36.0f);
+    
+    [UIView commitAnimations];
+
+    }
 @end

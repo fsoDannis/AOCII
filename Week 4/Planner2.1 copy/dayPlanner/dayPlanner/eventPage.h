@@ -21,6 +21,10 @@
     IBOutlet UIDatePicker *datePicker;
     NSString *myDate;
     NSString *eventString;
+    IBOutlet UILabel *swipeCloseLabel;
+    IBOutlet UIImageView *swiperClose;
+    
+    UISwipeGestureRecognizer *leftSwipe;
 
 }
 
@@ -28,6 +32,6 @@
 
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)datePicker:(id)sender;
--(IBAction)save:(id)sender;
+//-(IBAction)save:(id)sender;
 
 @end

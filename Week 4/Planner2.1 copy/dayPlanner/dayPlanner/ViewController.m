@@ -10,19 +10,10 @@
 @end
 
 @implementation ViewController
-//@synthesize swiper;
 
 - (void)viewDidLoad
 
-{
-    //Caching current Frame for the Swiper Image.  
-   // CGRect origSwiperPosition = swiper.frame;
-    
-//    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panDetected:)];
-//    [self.view addGestureRecognizer:panRecognizer];
-//    
-//   panRecognizer.delegate = self;
-    
+{    
     swipeBG.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipe"]];
 
     [super viewDidLoad];
@@ -37,11 +28,6 @@
     [swiper addGestureRecognizer:rightSwipe];
      
 }
-
-
-
-
-
 
 - (void)viewDidUnload
 {
@@ -66,19 +52,7 @@
     }
 }
 
-
-//Opening a page with a different transistion
--(IBAction)addEvent:(id)sender
-{
-    eventPage *event = [[eventPage alloc] initWithNibName:@"eventPage" bundle:nil];
-    if (event != nil)
-    {
-        event.delegate = self; 
-        event.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentModalViewController:event animated:TRUE];
-    } 
-}
-
+//My Swipe Gesture with Full Animations
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     [UIView beginAnimations:nil context:nil];
@@ -87,7 +61,7 @@
     {
         
         swipeBG.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipeD"]];
-        swiper.frame = CGRectMake(254.0f, 232.f, 46.0f, 36.0f);
+        swiper.frame = CGRectMake(254.0f, 420.0f, 46.0f, 36.0f);
 
         eventPage *load = [[eventPage alloc] initWithNibName:@"eventPage" bundle:nil];
         if (load != nil)
@@ -101,37 +75,10 @@
         NSLog(@"Swiped Right");
     }
      swipeBG.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipe"]];
-     swiper.frame = CGRectMake(16.0f, 232.f, 46.0f, 36.0f);
+     swiper.frame = CGRectMake(16.0f, 420.f, 46.0f, 36.0f);
      
      [UIView commitAnimations];
 }
-
-
-
-
-//#pragma mark - Gesture Recognizers
-//
-//- (void)panDetected:(UIPanGestureRecognizer *)panRecognizer
-//{
-//    CGPoint translation = [panRecognizer translationInView:self.view];
-//    CGPoint imageViewPosition = self.swiper.center;
-//    imageViewPosition.x += translation.x;
-//    //imageViewPosition.y += translation.y;
-//    
-//    self.swiper.center = imageViewPosition;
-//    [panRecognizer setTranslation:CGPointZero inView:self.view];
-//}
-//
-//
-//
-//#pragma mark - UIGestureRecognizerDelegate
-//
-//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-//{
-//    return YES;
-//}
-//
-
 
 // My did close... Still trying to figure this out here.. 
 -(void)DidClose:(NSString*)eventString
