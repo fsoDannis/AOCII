@@ -90,20 +90,8 @@
     [input resignFirstResponder];
 }
 
-////Saving (or sending i should say) the text -- Only sends data if they are not blank. 
-//-(IBAction)save:(id)sender
-//{
-//    if((delegate != nil) && (myDate !=nil))
-//    {
-//        eventString = [NSString stringWithFormat:@"There is a \"%@\" \n \t on %@ \n \n", input.text, myDate];
-//        [delegate DidClose:eventString];
-//        
-//    }
-//    [self dismissModalViewControllerAnimated:TRUE];
-//    
-//}
 
-
+//Swiping function
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     [UIView beginAnimations:nil context:nil];

@@ -32,6 +32,5 @@
 
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)datePicker:(id)sender;
-//-(IBAction)save:(id)sender;
 
 @end
