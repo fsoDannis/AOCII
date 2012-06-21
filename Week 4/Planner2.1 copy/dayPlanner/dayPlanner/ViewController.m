@@ -15,16 +15,33 @@
 - (void)viewDidLoad
 
 {
+    //Caching current Frame for the Swiper Image. 
+    CGRect origSwiperPosition = swiper.frame;
+    
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panDetected:)];
     [self.view addGestureRecognizer:panRecognizer];
     
-    panRecognizer.delegate = self;
+   panRecognizer.delegate = self;
     
     swipeToAdd.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipe"]];
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [swiper addGestureRecognizer:rightSwipe];
+     
+}
+
+
+
+
+
 
 - (void)viewDidUnload
 {
@@ -61,6 +78,28 @@
         [self presentModalViewController:event animated:TRUE];
     } 
 }
+
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    
+    if(recognizer.direction = UISwipeGestureRecognizerDirectionRight)
+    {
+        eventPage *load = [[eventPage alloc] initWithNibName:@"eventPage" bundle:nil];
+        if (load != nil)
+        {
+            load.delegate = self; 
+            load.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [self presentModalViewController:load animated:TRUE];
+        } 
+
+        
+        NSLog(@"Swiped Right");
+    }
+}
+
+
+
+
 #pragma mark - Gesture Recognizers
 
 - (void)panDetected:(UIPanGestureRecognizer *)panRecognizer
@@ -73,6 +112,7 @@
     self.swiper.center = imageViewPosition;
     [panRecognizer setTranslation:CGPointZero inView:self.view];
 }
+
 
 
 #pragma mark - UIGestureRecognizerDelegate

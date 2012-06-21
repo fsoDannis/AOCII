@@ -8,9 +8,14 @@
 {
     IBOutlet UITextView *textView;
     IBOutlet UILabel *swipeToAdd;
+    CGRect origSwiperPosition;
 
+    UISwipeGestureRecognizer *leftSwipe;
+    UISwipeGestureRecognizer *rightSwipe;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *swiper;
+
+
 -(IBAction)info:(id)sender;
 -(IBAction)addEvent:(id)sender;
 
