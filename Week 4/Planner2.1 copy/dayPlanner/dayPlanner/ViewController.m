@@ -11,16 +11,6 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-
-{    
-    swipeBG.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipe"]];
-
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-
 - (void) viewWillAppear:(BOOL)animated
 {
     rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
@@ -29,7 +19,8 @@
      
 }
 
-- (void)viewDidUnload
+
+- (void)viewDidUnload  
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -85,5 +76,37 @@
 {
     textView.text = [textView.text stringByAppendingString:eventString];
 }
+
+
+-(IBAction)save:(id)sender
+{
+    NSLog(@"save pressed");
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *allEvents = textView.text;
+        
+        [defaults setObject:allEvents forKey:@"myEvents"];
+        //actually saving the data
+        [defaults synchronize];
+    
+}
+
+- (void)viewDidLoad
+
+{    
+    swipeBG.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"swipe"]];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *nameString = [defaults objectForKey:@"myEvents"];
+    if(nameString.length >0){
+        
+        
+        textView.text = nameString;
+    }
+    
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+
 
 @end

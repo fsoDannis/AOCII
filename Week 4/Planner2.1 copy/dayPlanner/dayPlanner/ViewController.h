@@ -9,7 +9,7 @@
     IBOutlet UITextView *textView;
     IBOutlet UIImageView *swiper;
     IBOutlet UILabel *swipeBG;
-
+    IBOutlet UIBarButtonItem  *save;
     UISwipeGestureRecognizer *rightSwipe;
 }
 
